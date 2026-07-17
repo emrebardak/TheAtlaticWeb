@@ -3,13 +3,10 @@ import { FadingVideo } from '../components/FadingVideo';
 import { BlurText } from '../components/BlurText';
 import { ArrowUpRight, Play, ClockIcon, GlobeIcon } from '../components/icons';
 import {
-  NAV_LINKS,
   HERO_BADGE_TEXT,
   HERO_HEADLINE,
   HERO_SUBTEXT,
-  HERO_LOGO_INITIALS,
   HERO_BADGE_NEW_LABEL,
-  HERO_NAV_CTA_TEXT,
   HERO_STATS,
   HERO_CTA_PRIMARY_TEXT,
   HERO_CTA_SECONDARY_TEXT,
@@ -45,33 +42,6 @@ export function Hero() {
       />
 
       <div className="relative z-10 flex h-full flex-col">
-        <nav className="fixed inset-x-0 top-4 z-50 flex items-center justify-between px-8 lg:px-16">
-          <div className="liquid-glass flex h-12 w-12 items-center justify-center rounded-full">
-            <span className="font-heading text-2xl italic">{HERO_LOGO_INITIALS}</span>
-          </div>
-
-          <div className="liquid-glass hidden items-center rounded-full px-1.5 py-1.5 md:flex">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link}
-                href="#"
-                className="px-3 py-2 font-body text-sm font-medium text-white/90"
-              >
-                {link}
-              </a>
-            ))}
-            <button
-              type="button"
-              className="flex items-center gap-1 rounded-full bg-white px-4 py-2 text-sm font-medium text-black"
-            >
-              {HERO_NAV_CTA_TEXT}
-              <ArrowUpRight className="h-4 w-4" />
-            </button>
-          </div>
-
-          <div className="hidden h-12 w-12 md:block" />
-        </nav>
-
         <div className="flex flex-1 flex-col items-center justify-center px-4 pt-24 text-center">
           <motion.div
             className="liquid-glass flex items-center gap-2 rounded-full px-4 py-2"

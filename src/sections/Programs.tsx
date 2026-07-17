@@ -11,7 +11,7 @@ const CARD_ICONS: Record<'image' | 'movie' | 'lightbulb', typeof ImageIcon> = {
 
 export function Programs() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-black">
+    <section id="programs" className="relative min-h-screen overflow-hidden bg-black">
       <div
         className="pointer-events-none absolute inset-0 z-0"
         style={{

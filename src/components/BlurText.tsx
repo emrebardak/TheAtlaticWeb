@@ -7,7 +7,7 @@ interface BlurTextProps {
 }
 
 export function BlurText({ text, className }: BlurTextProps) {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLHeadingElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const words = text.split(' ');
 
@@ -32,7 +32,7 @@ export function BlurText({ text, className }: BlurTextProps) {
   }, []);
 
   return (
-    <div
+    <h1
       ref={containerRef}
       className={className}
       style={{
@@ -57,6 +57,6 @@ export function BlurText({ text, className }: BlurTextProps) {
           {word}
         </motion.span>
       ))}
-    </div>
+    </h1>
   );
 }
