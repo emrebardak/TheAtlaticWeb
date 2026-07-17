@@ -1,8 +1,8 @@
 // TEMPORARY PLACEHOLDER MEDIA — replace with real Atletic Base footage when available.
 export const HERO_VIDEO_SRC =
-  'https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
+  'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4';
 
 export const PROGRAMS_VIDEO_SRC = [
-  'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
-  'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+  'https://www.w3schools.com/html/mov_bbb.mp4',
+  'https://www.w3schools.com/html/movie.mp4',
 ];
