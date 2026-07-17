@@ -1,23 +1,11 @@
-import {
-  ArrowUpRight,
-  Play,
-  ClockIcon,
-  GlobeIcon,
-  ImageIcon,
-  MovieIcon,
-  LightbulbIcon,
-} from './components/icons';
+import { HERO_HEADLINE } from './content/copy';
+import { HERO_VIDEO_SRC } from './content/media';
 
 function App() {
   return (
-    <div className="flex min-h-screen flex-wrap items-center gap-6 bg-black p-8 text-white">
-      <ArrowUpRight className="h-6 w-6" />
-      <Play className="h-6 w-6" />
-      <ClockIcon className="h-6 w-6" />
-      <GlobeIcon className="h-6 w-6" />
-      <ImageIcon className="h-6 w-6" />
-      <MovieIcon className="h-6 w-6" />
-      <LightbulbIcon className="h-6 w-6" />
+    <div className="min-h-screen bg-black p-8 text-white">
+      <p>{HERO_HEADLINE}</p>
+      <p className="text-xs text-white/50">{HERO_VIDEO_SRC}</p>
     </div>
   );
 }
