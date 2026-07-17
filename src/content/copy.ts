@@ -7,6 +7,16 @@ export const HERO_HEADLINE = 'Raw Strength Forged In Concrete And Steel';
 export const HERO_SUBTEXT =
   "The Atletic Base is an industrial-grade training facility built for those who show up. Exposed concrete, moody blue light, and equipment that doesn't quit — built for strength, conditioning, and community.";
 
+export const HERO_LOGO_INITIALS = 'AB';
+
+export const HERO_BADGE_NEW_LABEL = 'New';
+
+export const HERO_NAV_CTA_TEXT = 'Join Now';
+
+export const HERO_CTA_PRIMARY_TEXT = 'Join Now';
+
+export const HERO_CTA_SECONDARY_TEXT = 'Watch The Space';
+
 export const HERO_STATS = [
   { icon: 'clock', value: '24/7', label: 'Round-The-Clock Facility Access' },
   { icon: 'globe', value: '500+', label: 'Members Training Strong Every Week' },

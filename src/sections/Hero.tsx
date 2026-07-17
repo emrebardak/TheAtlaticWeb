@@ -7,7 +7,12 @@ import {
   HERO_BADGE_TEXT,
   HERO_HEADLINE,
   HERO_SUBTEXT,
+  HERO_LOGO_INITIALS,
+  HERO_BADGE_NEW_LABEL,
+  HERO_NAV_CTA_TEXT,
   HERO_STATS,
+  HERO_CTA_PRIMARY_TEXT,
+  HERO_CTA_SECONDARY_TEXT,
   TRUST_BAR_TEXT,
   TRUST_STATS,
 } from '../content/copy';
@@ -42,7 +47,7 @@ export function Hero() {
       <div className="relative z-10 flex h-full flex-col">
         <nav className="fixed inset-x-0 top-4 z-50 flex items-center justify-between px-8 lg:px-16">
           <div className="liquid-glass flex h-12 w-12 items-center justify-center rounded-full">
-            <span className="font-heading text-2xl italic">AB</span>
+            <span className="font-heading text-2xl italic">{HERO_LOGO_INITIALS}</span>
           </div>
 
           <div className="liquid-glass hidden items-center rounded-full px-1.5 py-1.5 md:flex">
@@ -59,7 +64,7 @@ export function Hero() {
               type="button"
               className="flex items-center gap-1 rounded-full bg-white px-4 py-2 text-sm font-medium text-black"
             >
-              Join Now
+              {HERO_NAV_CTA_TEXT}
               <ArrowUpRight className="h-4 w-4" />
             </button>
           </div>
@@ -75,7 +80,7 @@ export function Hero() {
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.4 }}
           >
             <span className="rounded-full bg-white px-2 py-0.5 text-xs font-semibold text-black">
-              New
+              {HERO_BADGE_NEW_LABEL}
             </span>
             <span className="font-body text-sm text-white/90">{HERO_BADGE_TEXT}</span>
           </motion.div>
@@ -106,7 +111,7 @@ export function Hero() {
               type="button"
               className="liquid-glass-strong flex items-center gap-2 rounded-full px-5 py-2.5 font-body text-sm font-medium text-white"
             >
-              Join Now
+              {HERO_CTA_PRIMARY_TEXT}
               <ArrowUpRight className="h-4 w-4" />
             </button>
             <button
@@ -114,7 +119,7 @@ export function Hero() {
               className="flex items-center gap-2 font-body text-sm font-medium text-white"
             >
               <Play className="h-4 w-4" />
-              Watch The Space
+              {HERO_CTA_SECONDARY_TEXT}
             </button>
           </motion.div>
 
