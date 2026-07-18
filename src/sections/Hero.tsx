@@ -18,7 +18,7 @@ export function Hero() {
   const hero = copy.hero;
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden">
       <div
         className="pointer-events-none absolute inset-0 z-0"
         style={{
@@ -27,7 +27,13 @@ export function Hero() {
         }}
       />
 
-      <div className="relative z-10 flex h-full flex-col">
+      <motion.div
+        className="relative z-10 flex h-full flex-col"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false, amount: 0.15 }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+      >
         <div className="flex flex-1 flex-col items-center justify-center px-4 pt-24 text-center">
           <motion.div
             className="liquid-glass flex items-center gap-2 rounded-full px-4 py-2"
@@ -113,18 +119,8 @@ export function Hero() {
           <div className="liquid-glass rounded-full px-4 py-2 font-body text-sm text-white/90">
             {hero.trustBarText}
           </div>
-          <div className="flex flex-wrap justify-center gap-3 px-4">
-            {hero.trustStats.map((stat) => (
-              <span
-                key={stat}
-                className="liquid-glass rounded-full px-4 py-1.5 font-body text-sm text-white/90"
-              >
-                {stat}
-              </span>
-            ))}
-          </div>
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 }

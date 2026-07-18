@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { INSTAGRAM_URL, INSTAGRAM_POST_URLS } from '../content/contactInfo';
 import { InstagramEmbed } from '../components/InstagramEmbed';
+import { FadeOnScroll } from '../components/FadeOnScroll';
 
 declare global {
   interface Window {
@@ -46,7 +47,7 @@ export function Instagram() {
 
   return (
     <section id="instagram" className="relative overflow-hidden bg-black/60">
-      <div className="relative z-10 px-8 py-24 md:px-16 lg:px-20">
+      <FadeOnScroll className="relative z-10 px-8 py-24 md:px-16 lg:px-20">
         <p className="mb-6 font-body text-sm text-white/80">{instagram.label}</p>
         <h2 className="font-heading text-5xl italic leading-[0.9] tracking-[-2px] text-white md:text-6xl lg:text-7xl">
           {instagram.heading.map((line) => (
@@ -71,7 +72,7 @@ export function Instagram() {
             </div>
           ))}
         </div>
-      </div>
+      </FadeOnScroll>
     </section>
   );
 }

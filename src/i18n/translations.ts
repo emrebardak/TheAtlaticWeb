@@ -13,7 +13,6 @@ export interface Copy {
     ctaSecondary: string;
     stats: { icon: 'clock' | 'globe'; value: string; label: string }[];
     trustBarText: string;
-    trustStats: string[];
   };
   instagram: {
     label: string;
@@ -60,7 +59,6 @@ export const translations: Record<Language, Copy> = {
       ],
       trustBarText:
         'Şehrin dört bir yanındaki sporcuların, koçların ve azimli çalışanların güvendiği salon',
-      trustStats: ["2019'dan Beri", '12 Koç', '500+ Üye', '5.0 Puan', '7 Gün Açık'],
     },
     instagram: {
       label: '// Bizi Takip Edin',
@@ -104,7 +102,6 @@ export const translations: Record<Language, Copy> = {
         { icon: 'globe', value: '500+', label: 'Members Training Strong Every Week' },
       ],
       trustBarText: 'Trusted by athletes, coaches, and everyday grinders across the city',
-      trustStats: ['Est. 2019', '12 Coaches', '500+ Members', '5.0 Rated', 'Open 7 Days'],
     },
     instagram: {
       label: '// Follow Us',
