@@ -9,8 +9,12 @@ body {
   font-family: 'Barlow', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .liquid-glass {
-  background: rgba(255, 255, 255, 0.01);
+  background: rgba(0, 0, 0, 0.4);
   background-blend-mode: luminosity;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -40,7 +44,7 @@ body {
 }
 
 .liquid-glass-strong {
-  background: rgba(255, 255, 255, 0.01);
+  background: rgba(0, 0, 0, 0.45);
   background-blend-mode: luminosity;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);

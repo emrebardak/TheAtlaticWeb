@@ -24,7 +24,7 @@ npm run preview
 
 ## Placeholder media
 
-`src/content/media.ts` currently points `HERO_VIDEO_SRC` and `PROGRAMS_VIDEO_SRC` at public sample videos as placeholders. Replace both constants with real Atletic Base footage URLs when available — no other file needs to change.
+`src/content/media.ts` currently points `SCROLL_VIDEO_SRC` (the scroll-scrubbed fullscreen background video), `INSTAGRAM_POST_IMAGES`, and `MAP_EMBED_URL` at public placeholders. Replace these constants with real Atletic Base media when available — no other file needs to change.
 
 ## Design reference
 

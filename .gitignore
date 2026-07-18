@@ -28,3 +28,6 @@ dist-ssr
 *.tsbuildinfo
 /vite.config.js
 /vite.config.d.ts
+
+# Local-only backup of the original (pre-re-encode) video
+src/content/video-original.mp4
